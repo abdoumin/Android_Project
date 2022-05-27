@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Setting"
+    android:background="?attr/background_color">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_imageview"
+                android:src="@drawable/user"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            />
+        <TextView
+            android:id="@+id/occupation_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohamed BOUMAAZA"
+            android:textColor="#0C49C3"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:paddingLeft="15dp"
+         android:paddingRight="15dp"
+         android:paddingTop="20dp"
+        android:gravity="center_vertical"
+         >
+       <ImageView
+        android:layout_width="25dp"
+         android:layout_height="25dp"
+           android:src="@drawable/ic_baseline_person_24" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="First Name"
+             android:textColor="?attr/text_color"
+             android:textSize="18dp"
+             android:textStyle="bold"
+             android:paddingLeft="5dp"
+             />
+         <EditText
+             android:id="@+id/frsname_textview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="mohamed"
+             android:paddingLeft="15dp"
+             android:textSize="18dp"
+             android:textColor="@android:color/darker_gray"
+             />
+     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_person_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="?attr/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            />
+        <EditText
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="boumaaza"
+            android:paddingLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_email_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="?attr/text_color"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="50dp"
+            android:text="boumaaza.5.bm@gmail.com"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Edite profile "
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textColor="#0C49C3"
+            android:background="@drawable/bg_btn"
+
+
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:layout_marginLeft="-10dp"
+            android:textAllCaps="false"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
