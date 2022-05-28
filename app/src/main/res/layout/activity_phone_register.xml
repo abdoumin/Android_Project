@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.profile.PhoneRegisterActivity">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="405dp"
+            android:layout_height="725dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/covid1" />
+
+    </FrameLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView android:textColor="@color/colorOnPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="serif"
+                android:text="@string/phone_desc"
+                android:textSize="18sp" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1.0"
+                android:padding="12sp"
+                app:ccpDialog_textColor="?attr/colorControlNormal"
+                app:ccp_contentColor="?attr/colorControlNormal"
+                app:ccp_textSize="18sp"
+                tools:ignore="MissingClass,NestedWeights" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="serif"
+                android:hint="Phone Number"
+                android:inputType="phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/formatPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="13"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonStartVerification"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.0"
+                    android:fontFamily="sans-serif"
+                    android:text="Submit"
+                    android:textColor="@color/colorOnPrimary"
+                    app:cornerRadius="8dp" />
+
+                <Button
+                    android:id="@+id/buttonResend"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:fontFamily="sans-serif"
+                    android:text="Resubmit"
+                    android:textColor="@color/colorOnPrimary"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/code_desc"
+                android:textSize="18sp"
+                android:fontFamily="serif" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fieldVerificationCode"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:fontFamily="serif"
+                android:hint="Verification code"
+                android:inputType="number"
+                tools:ignore="NestedWeights">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:maxLength="6"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/buttonVerifyPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Submit Code"
+                    android:textColor="@color/colorOnPrimary"
+                    app:cornerRadius="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

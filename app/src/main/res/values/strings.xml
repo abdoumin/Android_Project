@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ContactTracing</string>
+    <string name="app_description">En laissant cette application s\'exécuter en arrière-plan
+        vous pourrez savoir quand vous êtes entré en contact avec une personne malade.</string>
+    <string name="explanation">Ici, vous pouvez mettre à jour votre état de santé de manière anonyme. Vous serez averti si un autre utilisateur qui a été près de chez vous a contracté le COVID-19.</string>
+    <string name="meeting_explanation">Une personne avec qui vous étiez à proximité a mis à jour son état de santé. Vous trouverez ici des informations sur le lieu, la durée et la date de l\'interaction.</string>
+    <string name="meeting_date">Date: \n  %1$s</string>
+    <string name="meeting_duration">Durée de contact: \n  %1$s</string>
+    <string name="meeting_location">Localisation</string>
+    <string name="health_title">Status de santé mis à jour</string>
+    <string name="health_status">%1$s</string>
+    <string name="btn_register">S\'inscrire</string>
+    <string name="edit_surname">Surname</string>
+    <string name="edit_family_name">Nom</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_phone">Numéro de téléphone</string>
+    <string name="btn_next">Continuer</string>
+    <string name="btn_finish">Finir</string>
+    <string name="disclaimer">Vous pouvez choisir de partager vos données. Vos données ne seront accessibles que si vous êtes malade</string>
+    <string name="status">Status</string>
+    <string name="location">Location</string>
+    <string name="meeting">Meeting</string>
+    <string name="preference_file_key">com.example.applicationprojettest.PREFKEY</string>
+    <string name="inscrit">inscrit</string>
+    <string name="familyName">familyName</string>
+    <string name="surname">surname</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="UID">UID</string>
+    <string name="token">token</string>
+    <string name="default_notification_channel_id">MYCHANNEL</string>
+    <string name="text_permissions">En vous inscrivant, vous vous engagez à :</string>
+    <string name="text_permissions_1">Partage de position pour le suivi des coordonnées</string>
+    <string name="text_permissions_2">Surveiller et stocker les personnes avec lesquelles vous entrez en contact (l\'identité reste inconnue)</string>
+    <string name="text_permissions_3">Stockage de votre numéro de téléphone</string>
+    <string name="phone_desc">Enter your phone number. You will receive a unique code by SMS, which you will have to enter in the box below:</string>
+    <string name="code_desc">Enter the code received by SMS:</string>
+    <string name="push_notification">CovSense: Someone you interacted with changed his status from:  %1$s to %2$s</string>
+
+    <string name="libs">\u2022 <b>Glide</b> for showing flag images.
+        \n\u2022 <b>Eaze Graph</b> for showing Pie charts.
+        \n\u2022 <b>Circle ImageView</b> to show image in a circular frame
+    </string>
+
+    <string name="login"><u>I already have an account , login</u></string>
+    <string name="register_text"><u>Register</u></string>
+    <string name="login_text"><u>Login</u></string>
+    <string name="version">v1.0.0</string>
+</resources>

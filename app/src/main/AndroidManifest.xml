@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.applicationprojettest">
+
+<uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="true"/>
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+<application
+
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:testOnly="false"
+    android:theme="@style/AppTheme"
+    >
+    <service
+        android:name="com.example.applicationprojettest.NearbyTrackingService"
+        android:enabled="true" />
+    <activity
+        android:name="com.example.applicationprojettest.LoggedInActivity"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+    <activity
+        android:name="com.example.applicationprojettest.PhoneRegisterActivity"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+    <activity
+        android:name="com.example.applicationprojettest.MeetingActivity"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <activity
+        android:name="com.example.applicationprojettest.DescriptionActivity"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <activity android:name="com.example.applicationprojettest.HelperActivity"
+        android:exported="true">
+    </activity>
+    <activity
+        android:name="com.example.applicationprojettest.recyclerView.recyclerActivity"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    </activity>
+   <!--Debut Partie Oussama -->
+    <activity
+        android:name="com.example.applicationprojettest.covidApi.MenuActivity"
+        android:exported="false" />
+    <activity android:name="com.example.applicationprojettest.covidApi.LoadingScreenActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name="com.example.applicationprojettest.covidApi.MainActivity" />
+    <activity android:name="com.example.applicationprojettest.covidApi.CountryWiseDataActivity" />
+
+    <!--Fin Partie Oussama -->
+
+    <!--Partie Youssef-->
+
+    <activity android:name=".gmailauthentification.MainActivity"/>
+    <activity android:name=".gmailauthentification.LoginActivity"/>
+    <activity android:name=".gmailauthentification.InscriptionActivity"/>
+
+    <activity android:name=".settings.Setting"/>
+    <activity android:name=".settings.settin"/>
+
+    <!--fin partie Youssef-->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+<!--
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+-->
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyA2tj_mEHMggpzQKnpwa4NIrk0BEGkVNZg"/>
+    <meta-data
+        android:name="com.google.android.nearby.messages.API_KEY"
+        android:value="AIzaSyBx4Tpy6mGDz5wFw0FS_J-qF0-PgLLDPMM"/>
+
+</application>
+
+</manifest>

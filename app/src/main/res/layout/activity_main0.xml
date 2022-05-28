@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/gradient"
+    tools:context=".PhoneRegisterActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Entrez Votre numéro de téléphone"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Phone No."
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btngenerateOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginBottom="20dp"
+        android:text="Generate OTP"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/btngenerateOTP"
+        android:layout_marginBottom="20dp"
+        android:hint="OTP"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnverifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:text="Verify OTP"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnverifyOTP"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+</RelativeLayout>
